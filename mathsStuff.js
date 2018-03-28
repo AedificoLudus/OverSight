@@ -1,3 +1,9 @@
+//marker object
+//holds radius (in cm), size (in pixels at a given distance), colour, prev-marker, angle
+
+//camera object
+//holds angle, image width & image weight
+
 const position (x, y, radius, size, width, height, angle) {
   distance = size/((2*radius*angle)/width);
   ppcm = ((angle/180)*pi*distance)/width;
@@ -11,3 +17,6 @@ const position (x, y, radius, size, width, height, angle) {
 
 
 (2*pi*distance)/width
+
+
+S = 2*pi*r*(angle/360);
